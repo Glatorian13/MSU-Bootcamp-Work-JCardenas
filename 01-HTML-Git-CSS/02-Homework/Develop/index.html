@@ -8,30 +8,33 @@
 </head>
 
 <body>
-    <!-- #main-header -->
-    <div class="header">
+    <!--replace div and header class with header element-->
+    <header>
         <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
-            <!--aria role description nav-->
-            <nav role="navigation">
-                <ul>
-                    <li>
-                        <a href="#search-engine-optimization">Search Engine Optimization</a>
-                    </li>
-                    <li>
-                        <a href="#online-reputation-management">Online Reputation Management</a>
-                    </li>
-                    <li>
-                        <a href="#social-media-marketing">Social Media Marketing</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+        <!--aria role description nav and replace div with nav-->
+        <nav role="navigation">
+            <ul>
+                <li>
+                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                </li>
+                <li>
+                    <a href="#online-reputation-management">Online Reputation Management</a>
+                </li>
+                <li>
+                    <a href="#social-media-marketing">Social Media Marketing</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <!--banner description-->
-    <div class="hero" role="img" aria-label="team banner image"></div>
-    <div class="content">
-        <div class="search-engine-optimization">
+    <div class="banner" role="img" aria-label="main banner image"></div>
+
+    <!--rename div and content class to section-->
+    <section>
+
+        <!--div and class to article and article-section-->
+        <article id="search-engine-optimization" class="article-section">
             <!--added alt text description-->
             <img src="./assets/images/search-engine-optimization.jpg" alt="image of search engine optimization"
                 class="float-left" />
@@ -41,8 +44,9 @@
                 travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase
                 your visibility and find the right customers for your business.
             </p>
-        </div>
-        <div id="online-reputation-management" class="online-reputation-management">
+        </article>
+        <!--rename div and class to article and article-section-->
+        <article id="online-reputation-management" class="article-section">
             <!--added alt text description-->
             <img src="./assets/images/online-reputation-management.jpg" alt="image of increasing reputation graph"
                 class="float-right" />
@@ -52,8 +56,9 @@
                 internet connection to say whatever they want about your business. Online Reputation Management gives
                 you the control over what potential customers see when they search for your business.
             </p>
-        </div>
-        <div id="social-media-marketing" class="social-media-marketing">
+        </article>
+        <!--rename div and class to article and article-section-->
+        <article id="social-media-marketing" class="article-section">
             <!--added alt text description-->
             <img src="./assets/images/social-media-marketing.jpg" alt="image of tweet share like on social media"
                 class="float-left" />
@@ -63,10 +68,14 @@
                 determine which platforms are suited to your brand, using analytics to find the right markets and
                 increase your lead generation.
             </p>
-        </div>
-    </div>
-    <div class="benefits">
-        <div class="benefit-lead">
+        </article>
+
+    </section>
+
+    <!--rename div and benefits class to aside element-->
+    <aside>
+        <!--rename div to asside and change class to article-asside-->
+        <article class="article-aside">
             <h3>Lead Generation</h3>
             <!--added alt text description-->
             <img src="./assets/images/lead-generation.png" alt="sales funnel image" />
@@ -74,8 +83,9 @@
                 Inbound strategies for lead generation require less work for your business, bringing customers directly
                 to your website.
             </p>
-        </div>
-        <div class="benefit-brand">
+        </article>
+        <!--rename div to asside and change class to article-asside-->
+        <article class="article-aside">
             <h3>Brand Awareness</h3>
             <!--added alt text description-->
             <img src="./assets/images/brand-awareness.png" alt="social awareness image" />
@@ -83,8 +93,9 @@
                 Users find your business through paid and organic searches, increasing the search ranking and visibility
                 for your business.
             </p>
-        </div>
-        <div class="benefit-cost">
+        </article>
+        <!--rename div to asside and change class to article-asside-->
+        <article class="article-aside">
             <h3>Cost Management</h3>
             <!--added alt text description and fixed img tag-->
             <img src="./assets/images/cost-management.png" alt="manage costs image" />
@@ -92,15 +103,17 @@
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer
                 need to advertise your page.
             </p>
-        </div>
-    </div>
-    <!-- #main-footer-->
-    <div class="footer">
+        </article>
+    </aside>
+
+    <!--footer-->
+    <footer>
         <h2>Made with ❤️️ by Horiseon</h2>
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>
-    </div>
+    </footer>
+
 </body>
 
 </html>
