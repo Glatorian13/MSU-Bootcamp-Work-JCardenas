@@ -61,7 +61,7 @@ body {
 @media screen and (max-width: 768px) {
   /* The body's bg color will be #333 */
   body {
-    background-color: #333;
+    background-color: #blue;
   }
 
   /* The wrapper's width will be 600px */
