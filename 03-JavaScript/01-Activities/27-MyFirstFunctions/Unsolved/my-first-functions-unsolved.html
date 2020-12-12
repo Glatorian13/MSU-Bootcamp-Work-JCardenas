@@ -44,18 +44,43 @@
 
       // Call the adder function here.
 
+      function adder(x ,y ,z){
+        return (x + y + z);
+      }
+
+
+
+      console.log(adder(1,2,3));
+
 
       console.log("-------------------");
 
-
       // Call the multiplier function here.
+      
+      function multi(x, y, z){
+        return x * y * z;
+      }
 
+      console.log(multi(2,3,4));
 
       console.log("-------------------");
 
 
       // Call the isString function here.
 
+      const myNum = 1;
+      const myString = "word";
+      const myBoolean = true;
+
+      function isString(x, y, z){
+        if(typeof x === "string" && typeof y === "string" && typeof z === "string"){
+          console.log("they are all strings");
+        }else{
+            console.log("not all strings");
+          }
+        }
+
+        isString("nope", "yes", 15);
 
       console.log("-------------------");
 
