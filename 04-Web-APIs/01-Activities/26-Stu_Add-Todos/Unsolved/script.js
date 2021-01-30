@@ -21,3 +21,22 @@ function renderTodos() {
     todoList.appendChild(li);
   }
 }
+
+//
+todoForm.addEventListener("xyz", function(event) {
+  event.preventDefault();
+
+  var todoText =todoInput.value.trim();
+
+  if (todoText === "") {
+    return;
+  }
+
+  todos.push.(todoText);
+  todoInput.value = "";
+
+  renderTodos();
+
+
+  
+});

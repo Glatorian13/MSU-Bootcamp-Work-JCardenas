@@ -7,6 +7,12 @@ var minutesDisplay = document.querySelector("#minutes");
 var secondsDisplay = document.querySelector("#seconds");
 var workMinutesInput = document.querySelector("#work-minutes");
 var restMinutesInput = document.querySelector("#rest-minutes");
+//additonal variables
+let isRun = false
+let workSDur = 1500;
+let currentLeft = 1500;
+let brkSDurr = 300;
+
 
 var totalSeconds = 0;
 var secondsElapsed = 0;
@@ -17,3 +23,10 @@ function startTimer() {
 }
 
 playButton.addEventListener("click", startTimer);
+
+//pause
+//**//pauseButton.addEventListener("click", () => {
+
+//**// */})
+
+

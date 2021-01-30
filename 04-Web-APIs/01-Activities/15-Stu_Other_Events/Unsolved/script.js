@@ -13,3 +13,9 @@ function toggleDisplay(event) {
     keyEventsEl.classList.add("hide");
   }
 }
+
+function keydown(event) {
+  var keyPress = event.key;
+  var keyCode = event.code;
+  document.querySelector("#key").textContent
+}

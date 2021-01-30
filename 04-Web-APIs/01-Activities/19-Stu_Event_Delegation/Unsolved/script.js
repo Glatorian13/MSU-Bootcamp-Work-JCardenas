@@ -19,6 +19,9 @@ function addPersonToList(event) {
   people.push({ name: name });
   peopleListEl.append(li);
 }
+function editListItem(event {
+  
+})
 
 function close() {
   modalEl.style.display = "none";
