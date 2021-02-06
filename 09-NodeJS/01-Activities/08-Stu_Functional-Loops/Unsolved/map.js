@@ -21,3 +21,4 @@ const oddOrEven = originalArray.map(num => {
     return 'odd'
   }
 });
+
