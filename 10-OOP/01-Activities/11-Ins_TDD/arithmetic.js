@@ -1,3 +1,16 @@
+// function Arithmetic(number = 0) {
+//   this.number = number;
+//   this.plus = function(num = 0){
+//     return new Arithmetic(this.number + num);
+//   }
+//   this.minus = function(num = 0){
+//     return new Arithmetic(this.number - num);
+//   }
+//   this.value = function(){
+//     return this.number;
+//   }
+// }
+
 function Arithmetic(number = 0) {
   this.number = number;
 }

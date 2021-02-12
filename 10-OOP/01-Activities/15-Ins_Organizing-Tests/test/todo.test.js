@@ -1,3 +1,11 @@
+/*
+ * note that there are two modules and a corresponding test file for each
+ * within each test you will have test for +, -, & each type of exception
+ * remember to double check what you're testing, you should have a small number of test for each method but throughly test the method
+ * 
+ * Within each test we use the Arrange (setup), Act (execute), Assert (compare)
+ */ 
+
 const Todo = require('../todo');
 
 describe('Todo', () => {
