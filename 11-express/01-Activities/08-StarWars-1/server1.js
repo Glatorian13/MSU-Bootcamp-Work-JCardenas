@@ -1,8 +1,8 @@
 // Dependencies
-const express = require('express');
+const express = require('express');  // old way: http = require('http')
 
-const app = express();
-const PORT = 3000;
+const app = express();  // this initializes express and returns the express instance which we call an application/app.  when we use http it was returning a new instance automatically so you don't have to initialize
+const PORT = 3000;  // we used 8080 (and some other last class).  express typically uses 3000; we can use anything though
 
 // Data
 const yoda = {
@@ -28,6 +28,20 @@ const darthmaul = {
 //
 
 // Routes
+/** 
+ * last class we used switch statement to render content.  this is the same concept:
+ * .get means that the method used was a GET method and then the first param is the path
+ * 
+ * so it would be like this in the past 
+ * if (req.url === XXX AND req.method === "GET") render this content
+ * 
+ * also note the similarity to how it looks with the handleRequest functions we've written? 
+ * This is perform two functions:
+ * 1. It is defining the method and route
+ * 2. it is assigning the function to be executed when the method/route combination occurs
+ *
+ * Together, these form the same functionality we previously used in http.createServer(handleRequest);
+ */
 app.get('/', (req, res) => {
   res.send('Welcome to the Star Wars Page!');
 });
@@ -49,4 +63,5 @@ app.get('/darthmaul', (req, res) => {
 //
 
 // Listener
-app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
+app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));  // old method was server.listen(port, function)
+

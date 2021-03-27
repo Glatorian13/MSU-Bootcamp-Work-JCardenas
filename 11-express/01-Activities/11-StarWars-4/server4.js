@@ -53,7 +53,26 @@ app.get('/api/characters/:character', (req, res) => {
   }
 
   // otherwise send back "false"
-  return res.json(false);
+  // why are we sending through json instead of res.send("false") ?? Hint: if has to do with a response header
+  return res.send(false);
+});
+
+app.get('/api/characters/:character/nickname/:nickname', (req, res) => {
+  // What does this code do?
+  const chosen = req.params.character;
+  console.log(chosen);
+
+  // What does this code do?
+  for (let i = 0; i < characters.length; i++) {
+    const currentChar = characters[i];
+    if (chosen === currentChar.routeName) {
+      currentChar.nickname = req.params.nickname;
+      return res.json(currentChar);
+    }
+  }
+
+  // What does this code do?
+  return res.send('No character found');
 });
 
 // Listener

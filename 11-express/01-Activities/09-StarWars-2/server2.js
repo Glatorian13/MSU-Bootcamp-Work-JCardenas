@@ -34,11 +34,24 @@ app.get('/', (req, res) => {
   res.send('Welcome to the Star Wars Page!');
 });
 
-app.get('/:character', (req, res) => {
-  const chosen = req.params.character;
+//chosen automatically binds the url part to the req.{name}
+app.get('/:chosen', (req, res) => {
+  const chosen = req.params.chosen;
 
   // What does this log?
   console.log(chosen);
+
+  res.end();
+});
+
+// if you wanted to have two params you could do this.  (also see exercies 4 for a more realistic example)
+app.get('/:param1/:param2', (req, res) => {
+  const chosen = req.params.param1;
+  const chosen2 = req.params.param2;
+
+  // What does this log?
+  console.log(chosen);
+  console.log(chosen2);
 
   res.end();
 });

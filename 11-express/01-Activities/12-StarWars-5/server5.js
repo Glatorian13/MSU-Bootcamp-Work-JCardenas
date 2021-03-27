@@ -5,6 +5,7 @@ const app = express();
 const PORT = 3000;
 
 // Sets up the Express app to handle data parsing
+// what is this url encoded??? hover over the method name to see the description Returns middleware that only parses urlencoded bodies and only looks at requests where the Content-Type header matches the type option
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 

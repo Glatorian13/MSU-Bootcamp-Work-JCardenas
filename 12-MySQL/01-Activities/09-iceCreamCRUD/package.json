@@ -1,0 +1,17 @@
+{
+  "name": "ice-cream-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "iceCreamCRUD.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "iceCreamCRUD.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "all": "^0.0.0",
+    "inquirer": "^7.3.3",
+    "mysql": "^2.18.1"
+  }
+}
